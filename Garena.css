@@ -38,11 +38,11 @@ h1 {
     align-items: center;
     text-align: center;
     width: 17cm;
-    height: 0.8cm;
+    height: 1.5cm;
     border-radius: 50px;
     border-color: transparent;
     outline: none;
-    font-size: 0.8cm;
+    font-size: 1cm;
     padding: 0.3cm;
     font-family: 'Mitr', sans-serif;
     color:rgb(49, 49, 49);
@@ -57,7 +57,7 @@ h1 {
     height: 1.5cm;
     border-radius: 50px;
     outline: none;
-    font-size: 0.7cm;
+    font-size: 0.9cm;
     padding: 0.3cm;
     font-family: 'Mitr', sans-serif;
     color:rgb(255, 255, 255);
