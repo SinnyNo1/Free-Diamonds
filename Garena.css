@@ -67,8 +67,8 @@ h1 {
 
 .input:focus {
     transition: 0.15s;
-    border-color: rgb(255, 72, 72);
-    box-shadow: 0 0 20px 0 rgb(255, 72, 72);
+    border-color: rgb(72, 145, 255);
+    box-shadow: 0 0 20px 0 rgb(72, 145, 255);
 }
 
 .input2:hover {
