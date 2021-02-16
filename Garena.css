@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    font-family: 'Mitr', sans-serif;
+}
+
+.bruh {
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    font-family: 'Mitr', sans-serif;
+}
+
+h1 {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width :50.8cm;
+    height: 2cm;
+    background-color: rgb(255, 166, 0);
+}
+
+.input {
+    transition: 0.15s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 17cm;
+    height: 0.8cm;
+    border-radius: 50px;
+    border-color: transparent;
+    outline: none;
+    font-size: 0.8cm;
+    padding: 0.3cm;
+    font-family: 'Mitr', sans-serif;
+    color:rgb(49, 49, 49);
+}
+
+.input2 {
+    transition: 0.15s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 7cm;
+    height: 1.5cm;
+    border-radius: 50px;
+    outline: none;
+    font-size: 0.7cm;
+    padding: 0.3cm;
+    font-family: 'Mitr', sans-serif;
+    color:rgb(255, 255, 255);
+    border-color: transparent;
+    background-color: tomato;
+}
+
+.input:focus {
+    transition: 0.15s;
+    border-color: rgb(255, 72, 72);
+    box-shadow: 0 0 20px 0 rgb(255, 72, 72);
+}
+
+.input2:hover {
+    transition: 0.3s;
+    background-color: rgb(129, 255, 71);
+}
